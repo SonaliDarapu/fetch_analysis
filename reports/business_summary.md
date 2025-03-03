@@ -1,4 +1,4 @@
-Are there any data quality issues present?
+**Are there any data quality issues present?**
 Missing Values
 Products Table:
 CATEGORY_1 has 111 missing values.
@@ -59,7 +59,7 @@ If NaN values existed, were they missing sales values or cancelled transactions?
 Ensure no negative values (which might indicate refunds).
                  
 
-Closed-ended questions:
+**Closed-ended questions:**
 2. What are the top 5 brands by receipts scanned among users 21 and over?
 *Top 5 Brands by Receipts Scanned (Users 21+):*
 REPHRESH - 55 receipts
@@ -95,7 +95,7 @@ The first year in the dataset (2014) is Fetch’s starting point.
 Since there’s no previous-year data for 2014, we assume Fetch started tracking users that year.
 
 3. 
-Email to Product/Business Leader
+**Email to Product/Business Leader**
 
 Subject: Key Data Quality Issues & Trends – Fetch Investigation
 
