@@ -96,36 +96,47 @@ Since there’s no previous-year data for 2014, we assume Fetch started tracking
 
 3. 
 Email to Product/Business Leader
+
 Subject: Key Data Quality Issues & Trends – Fetch Investigation
+
 Dear Sir,
 I’ve analyzed Fetch’s transaction, product, and user data, and here are some key findings:
+
 Data Quality Issues
 Missing Values:
 Severe gaps in product details: CATEGORY_4 (778K missing), MANUFACTURER & BRAND (~226K missing).
 Transactions missing BARCODEs (5,762 records)—some purchases may not be linked to products.
 User attributes missing (e.g., LANGUAGE: 30K, STATE: 4.8K, GENDER: 5.8K).
+
 Data Type & Consistency Issues:
 BARCODE stored as float (should be string, causing mismatches).
 FINAL_QUANTITY & FINAL_SALE incorrectly stored as text—potentially affecting revenue calculations.
 Gender inconsistencies (“M”, “Male”, “UNKNOWN”).
+
 Duplicate & Unmatched Records:
 19,408 transactions reference non-existent products (missing barcodes).
 215 duplicate products, 171 duplicate transactions.
+
 Interesting Trend
 User Growth Slowdown: Fetch saw a -42.31% decline in new user registrations in 2023 compared to the previous year. While growth peaked in 2017 (+820% YoY), sustaining user engagement is now a challenge. A potential focus area could be improving retention through targeted offers and incentives.
+
 Outstanding Questions & Next Steps
+
 Product Data Issues:
 Can we source missing CATEGORY_4, MANUFACTURER, and BRAND information?
 Should missing values be flagged as "Unknown," or do they need validation from another dataset?
+
 Sales & Transaction Data:
 FINAL_QUANTITY values (e.g., 0.01, 276.76): Are these weight-based or data errors?
 FINAL_SALE: Some values are unrealistically low (e.g., $0.01). Do we need validation rules to flag outliers?
+
 Growth Strategy:
 Should we analyze retention metrics to better understand why user growth has slowed?
 Would marketing insights help determine if engagement (e.g., receipts scanned) has also declined?
 I’d appreciate your input on the above. Let me know how we can best align data fixes with business priorities.
+
 Thanks,
- Sonali
+Sonali
 
 
 
